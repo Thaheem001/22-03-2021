@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>New Assignment By Waqas Sir</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="https://coreui.io/demo/free/3.4.0/assets/favicon/favicon-16x16.png"
+    type="image/x-icon">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    #left-menue {
+      background-color: #3C4B64;
+      height: 100%;
+      width: 275px;
+      position: fixed;
+      top: 0;
+      left: 0px;
+      display: inline-block;
+      transition: all .5s;
+    }
+
+    #left {
+      visibility: hidden;
+    }
+
+    .toggle-768 {
+      display: none !important;
+    }
+
+    #all-page {
+      position: absolute;
+      top: 0;
+      left: 0px;
+      background-color: #eee;
+      transition: all .5s;
+      width: 100%;
+    }
+
+    .profile-logo {
+      width: 40px;
+      position: absolute;
+      right: 35px;
+    }
+
+    .left:checked~#left-menue {
+      left: 0px;
+    }
+
+    .left1:checked+#all-page {
+      left: 275px;
+      width: calc(100% - 275px);
+    }
+
+    .side-ul ul li a {
+      color: white;
+      padding: 10px 25px;
+      display: block;
+      padding-left: 50px;
+    }
+
+    .side-ul ul li a:hover {
+      background-color: #50607a;
+      text-decoration: none;
+    }
+
+    .side-ul ul li {
+      font-weight: 100 !important;
+      width: 100%;
+      position: relative;
+    }
+
+    .ul-a::before {
+      font-family: "Font Awesome 5 Pro";
+      color: gray;
+      position: absolute;
+      left: 15px;
+    }
+
+    .ul-a1::before {
+      content: "\f3fd";
+    }
+
+    .ul-a2::before {
+      content: "\f0a1";
+    }
+
+    .ul-a3::before {
+      content: "\f030";
+    }
+
+    .ul-a4::before {
+      content: "\f3cd";
+    }
+
+    .ul-a5::before {
+      content: "\f0eb";
+    }
+
+    .ul-a6::before {
+      content: "\f155";
+    }
+
+    .ul-a7::before {
+      content: "\f291";
+    }
+
+    .ul-a8::before {
+      content: "\f3a5";
+    }
+
+    .my-table {
+      width: calc(100% - 50px) !important;
+    }
+
+    .back-l:hover {
+      color: white;
+    }
+
+    @media screen and (max-width:768px) {
+      label.toggle-full {
+        display: none !important;
+      }
+
+      .toggle-768 {
+        display: inline-block !important;
+      }
+
+      .left1:checked+#all-page {
+        width: 100% !important;
+      }
+
+      #left-menue {
+        z-index: 11;
+        left: -280px;
+        padding-top: 90px;
+      }
+    }
+
+    @media screen and (max-width:768px) {
+      .form-control {
+        width: 90%;
+      }
+
+      .my-table {
+        width: 90%;
+      }
+    }
+
+    @media screen and (max-width:370px) {
+      .table-mobile {
+        overflow-x: auto;
+      }
+
+      #left-menue {
+        width: 100%;
+        left: -325px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- ------------left box--------------- -->
+  <div>
+    <input type="checkbox" name="left" id="left" class="left">
+    <div id="left-menue">
+      <div style="background-color: #2C3953; width: 100%;">
+        <img src="img/logo.png" alt="sorry" class="d-block mx-auto">
+      </div>
+      <div class="side-ul mt-3">
+        <ul class="list-unstyled text-white-50">
+          <li><a href="" class="ul-a1 ul-a">Dashboard</a></li>
+          <li><a href="" class="ul-a2 ul-a">Brands</a></li>
+          <li><a href="" class="ul-a3 ul-a">Cameras</a></li>
+          <li><a href="" class="ul-a4 ul-a">Case Types</a></li>
+          <li style="background-color: #50607a;"><a href="" class="ul-a5 ul-a">Models</a></li>
+          <li><a href="" class="ul-a6 ul-a">Ebay Account</a></li>
+          <li><a href="" class="ul-a7 ul-a">Ebay Orders</a></li>
+          <li><a href="" class="ul-a8 ul-a">Ebay Product</a></li>
+        </ul>
+      </div>
+      <div class="text-right pr-3 text-black-50 position-absolute" style="bottom: 0; right: 0;"><label for="left1"
+          style="cursor: pointer; padding: 10px; " class="back-l toggle-full"><i class="fa fa-arrow-left"
+            aria-hidden="true"></i></label></i></div>
+      <div class="text-right pr-3 text-black-50 position-absolute" style="bottom: 0; right: 0;"><label for="left"
+          style="cursor: pointer; padding: 10px; " class="back-l toggle-768"><i class="fa fa-arrow-left"
+            aria-hidden="true"></i></label></i></div>
+    </div>
+  </div>
+  <!-- ------------main start----------- -->
+  <input type="checkbox" name="left" id="left1" class="left1">
+  <div id="all-page">
+    <!-- -------------------nav------------------ -->
+    <div class="nav bg-light p-2 sticky-top ">
+      <!-- <label for="left" >Arslan Thaheem</label> -->
+      <label for="left1" class="ml-3 d-inline-block toggle-full"><i class="fas fa-align-justify d-inline-block"
+          style="font-size: 20px; margin-top: 10px; margin-right: 20px; cursor: pointer;"></i></label>
+      <label for="left" class="ml-3 d-inline-block toggle-768"><i class="fas fa-align-justify d-inline-block"
+          style="font-size: 20px; margin-top: 10px; margin-right: 20px; cursor: pointer;"></i></label>
+      <a class="nav-link " href="#" class="d-inline-block pl-4">Home</a>
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+        aria-expanded="false" style="color: gray;">English</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">English</a>
+        <a class="dropdown-item" href="#">Urdu</a>
+        <a class="dropdown-item" href="#">English & Urdu</a>
+      </div>
+      <div class="profile-logo float-right ">
+        <a href=""><img src="img/icone.png" alt="sorry" class="img-fluid"></a>
+      </div>
+    </div>
+
+    <!-- ----------------------nav end------------ -->
+    <nav aria-label="breadcrumb" class="mt-1 mb-1">
+      <ol class="breadcrumb bg-light">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Model Management</li>
+      </ol>
+    </nav>
+    <!-- ------------model management------- -->
+    <div class="model-management bg-light pb-5 table-mobile" style="margin: 20px;">
+      <div class="head-model p-2 border-bottom">
+        <p class="ml-4 text-secondary d-inline-block" style="margin-bottom: 5px !important;">Model Management</p>
+        <button class="float-right border-0 bg-transparent text-secondary"> + Crate Model</button>
+      </div>
+
+      <div class="col-md-6 col-sm-4 col-12  text-secondary d-inline-block ">
+        <div class="row mt-2 ml-3">
+          <div class="col-sm-6 col-md-3 col-5 mt-2">Per Page:</div>
+          <div class="col-sm-6 col-md-3 col-5">
+            <select class="custom-select d-inline-block " id="inputGroupSelect01">
+              <option selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-5 col-sm-7 col-12 d-inline-block ">
+        <input type="search" name="search" id="search" class="form-control m-2 " placeholder="Search...">
+      </div>
+
+      <table class="table table-bordered table-striped m-sm-4 my-table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Image</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">IPhone 11</th>
+            <td>IPhone</td>
+            <td><img src="img/cell.png" alt="sorry"></td>
+            <td>
+              <button class="btn btn-success rounded m-2"><i class="fas fa-search"></i> View</button>
+              <button class="btn btn-primary rounded m-2"><i class="far fa-edit"></i> Edit</button>
+              <button class="btn btn-danger rounded m-2"><i class="fas fa-trash"></i> Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">IPhone 12</th>
+            <td>IPhone</td>
+            <td><img src="img/cell.png" alt="sorry"></td>
+            <td>
+              <button class="btn btn-success rounded m-2"><i class="fas fa-search"></i> View</button>
+              <button class="btn btn-primary rounded m-2"><i class="far fa-edit"></i> Edit</button>
+              <button class="btn btn-danger rounded m-2"><i class="fas fa-trash"></i> Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">IPhone X</th>
+            <td>IPhone</td>
+            <td><img src="img/cell.png" alt="sorry"></td>
+            <td>
+              <button class="btn btn-success rounded m-2"><i class="fas fa-search"></i> View</button>
+              <button class="btn btn-primary rounded m-2"><i class="far fa-edit"></i> Edit</button>
+              <button class="btn btn-danger rounded m-2"><i class="fas fa-trash"></i> Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">IPhone X Pro</th>
+            <td>IPhone</td>
+            <td><img src="img/cell.png" alt="sorry"></td>
+            <td>
+              <button class="btn btn-success rounded m-2"><i class="fas fa-search"></i> View</button>
+              <button class="btn btn-primary rounded m-2"><i class="far fa-edit"></i> Edit</button>
+              <button class="btn btn-danger rounded m-2"><i class="fas fa-trash"></i> Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">IPhone 11+</th>
+            <td>IPhone</td>
+            <td><img src="img/cell.png" alt="sorry"></td>
+            <td>
+              <button class="btn btn-success rounded m-2"><i class="fas fa-search"></i> View</button>
+              <button class="btn btn-primary rounded m-2"><i class="far fa-edit"></i> Edit</button>
+              <button class="btn btn-danger rounded m-2"><i class="fas fa-trash"></i> Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">IPhone 11 Pro</th>
+            <td>IPhone</td>
+            <td><img src="img/cell.png" alt="sorry"></td>
+            <td>
+              <button class="btn btn-success rounded m-2"><i class="fas fa-search"></i> View</button>
+              <button class="btn btn-primary rounded m-2"><i class="far fa-edit"></i> Edit</button>
+              <button class="btn btn-danger rounded m-2"><i class="fas fa-trash"></i> Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2Iphone 12 pro max</th>
+            <td>IPhone</td>
+            <td><img src="img/cell.png" alt="sorry"></td>
+            <td>
+              <button class="btn btn-success rounded m-2"><i class="fas fa-search"></i> View</button>
+              <button class="btn btn-primary rounded m-2"><i class="far fa-edit"></i> Edit</button>
+              <button class="btn btn-danger rounded m-2"><i class="fas fa-trash"></i> Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Iphone 11 pro</th>
+            <td>IPhone</td>
+            <td><img src="img/cell.png" alt="sorry"></td>
+            <td>
+              <button class="btn btn-success rounded m-2"><i class="fas fa-search"></i> View</button>
+              <button class="btn btn-primary rounded m-2"><i class="far fa-edit"></i> Edit</button>
+              <button class="btn btn-danger rounded m-2"><i class="fas fa-trash"></i> Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Iphone 5s</th>
+            <td>IPhone</td>
+            <td><img src="img/cell.png" alt="sorry"></td>
+            <td>
+              <button class="btn btn-success rounded m-2"><i class="fas fa-search"></i> View</button>
+              <button class="btn btn-primary rounded m-2"><i class="far fa-edit"></i> Edit</button>
+              <button class="btn btn-danger rounded m-2"><i class="fas fa-trash"></i> Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Iphone 6s</th>
+            <td>IPhone</td>
+            <td><img src="img/cell.png" alt="sorry"></td>
+            <td>
+              <button class="btn btn-success rounded m-2"><i class="fas fa-search"></i> View</button>
+              <button class="btn btn-primary rounded m-2"><i class="far fa-edit"></i> Edit</button>
+              <button class="btn btn-danger rounded m-2"><i class="fas fa-trash"></i> Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Iphone 6 +</th>
+            <td>IPhone</td>
+            <td><img src="img/cell.png" alt="sorry"></td>
+            <td>
+              <button class="btn btn-success rounded m-2"><i class="fas fa-search"></i> View</button>
+              <button class="btn btn-primary rounded m-2"><i class="far fa-edit"></i> Edit</button>
+              <button class="btn btn-danger rounded m-2"><i class="fas fa-trash"></i> Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Iphone 7s</th>
+            <td>IPhone</td>
+            <td><img src="img/cell.png" alt="sorry"></td>
+            <td>
+              <button class="btn btn-success rounded m-2"><i class="fas fa-search"></i> View</button>
+              <button class="btn btn-primary rounded m-2"><i class="far fa-edit"></i> Edit</button>
+              <button class="btn btn-danger rounded m-2"><i class="fas fa-trash"></i> Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Iphone 7+</th>
+            <td>IPhone</td>
+            <td><img src="img/cell.png" alt="sorry"></td>
+            <td>
+              <button class="btn btn-success rounded m-2"><i class="fas fa-search"></i> View</button>
+              <button class="btn btn-primary rounded m-2"><i class="far fa-edit"></i> Edit</button>
+              <button class="btn btn-danger rounded m-2"><i class="fas fa-trash"></i> Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Iphone 8+</th>
+            <td>IPhone</td>
+            <td><img src="img/cell.png" alt="sorry"></td>
+            <td>
+              <button class="btn btn-success rounded m-2"><i class="fas fa-search"></i> View</button>
+              <button class="btn btn-primary rounded m-2"><i class="far fa-edit"></i> Edit</button>
+              <button class="btn btn-danger rounded m-2"><i class="fas fa-trash"></i> Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Iphone X pro</th>
+            <td>IPhone</td>
+            <td><img src="img/cell.png" alt="sorry"></td>
+            <td>
+              <button class="btn btn-success rounded m-2"><i class="fas fa-search"></i> View</button>
+              <button class="btn btn-primary rounded m-2"><i class="far fa-edit"></i> Edit</button>
+              <button class="btn btn-danger rounded m-2"><i class="fas fa-trash"></i> Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Iphone 12</th>
+            <td>IPhone</td>
+            <td><img src="img/cell.png" alt="sorry"></td>
+            <td>
+              <button class="btn btn-success rounded m-2"><i class="fas fa-search"></i> View</button>
+              <button class="btn btn-primary rounded m-2"><i class="far fa-edit"></i> Edit</button>
+              <button class="btn btn-danger rounded m-2"><i class="fas fa-trash"></i> Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="float-right mr-4 text-secondary mt-0">Showing 1 to 17 out of 17 result</p>
+
+
+    </div>
+
+
+
+    <footer>
+      <p class="pl-4 d-inline-block">Copyright <i class="far fa-copyright"></i> 2021 <a
+          href="https://www.facebook.com/ThaheemSahab786" target="_blank">Arsl
+          Thaheem</a> All Right Resered</p>
+      <p class="float-right d-inline-block pr-4">Develped By <a href="https://www.facebook.com/ThaheemSahab786"
+          target="_blank">Arsl Thaheem</a></p>
+    </footer>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
